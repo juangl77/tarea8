@@ -1,5 +1,5 @@
 import numpy as np
-import pylab as plt
+import matplotlib.pyplot as plt
 from math import *
 
 #Se cargan los datos de las observaciones
@@ -97,7 +97,7 @@ print "El valor de E_0 es", mejor_Eo
 print "El valor de sigma es", mejor_sigma
 print "El valor de alpha es", mejor_alpha
 
-scatter(n_ener_datos,n_cuen_datos)
+plt.scatter(n_ener_datos,n_cuen_datos)
 plt.plot(n_ener_datos,mi_modelo(n_ener_datos, mejor_A, mejor_B, mejor_Eo, mejor_sigma, mejor_alpha))
 plt.show()
 
